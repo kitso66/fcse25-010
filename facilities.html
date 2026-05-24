@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNOVA | Facilities</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   
+    <nav>
+       <button class="hamburger" id="hamburger" aria-label="Menu">
+         <span></span>
+         <span></span>
+       </button>
+       <a class="nav-logo" href="index.html">SNOVA</a>
+       <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="facilities.html" class="active">Facilities</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="bookings.html">Bookings</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">X</button>
+        <a href="index.html">Home</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <header class="page-header">
+        <span class="page-title">Facilities</span>
+    </header>
+
+    <main class="facilities-body">
+         
+        <section class="facility-section">
+            <div class="facility-left">
+                <div class="facility-label-block">
+                    <h2>Outdoor</h2>
+                </div>
+                <div class="facility-description">
+                    <p>Step outside the indoor slopes and breathe in the crisp air at our sprawling Outdoor Alpine Plaza.</p>
+                    <p>Designed to perfectly complement our indoor winter wonderland, the SNOVA Outdoor Facility is a breathtaking open-air space where adventure meets relaxation. Whether you are looking to keep the andrenalin pumping or simply want to unwind under the stars after a long day of shredding powder, our outdoor grounds have somthing for everyone.</p>
+                </div>
+            </div>
+
+            <div class="facility-right">
+                <img class="facility-img" src="outdoorfacility.png" alt="Outdoor Facility">
+
+                <div class="facility-ideal">
+                    <h4>Ideal for:</h4>
+                    <ul>
+                        <li>Magical Scenery</li>
+                        <li>Fresh Alpine Air</li>
+                        <li>Family Friendly</li>
+                        <li>Cozy Relaxation</li>
+                        <li>More ways to play</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+   
+        <section class="facility-section reverse">
+            <div class="facility-left">
+                <img class="facility-img" src="indoorfacilty.png" alt="Indoor Facility">
+
+                <div class="facility-ideal">
+                    <h4>Ideal Foe:</h4>
+                    <ul>
+                        <li>Weather-proof riding</li>
+                        <li>Year-Round Winter</li>
+                        <li>Focused Progression</li>
+                        <li>Safety</li>
+                        <li>Optimal Comfort</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="facility-right">
+                <div class="facility-label-block">
+                    <h2>Indoor</h2>
+                </div>
+
+                <div class="facility-description">
+                    <p>Step off the city streets and straight into winter at our premium indoor facility. Maintained at a crisp, constant sub-zero temperature year-round, the climate controlled arena garuntees perfect snow conditions whether it is the middle of summer or the dead of winter.</p>
+                    <p>The centerpiece of the facility is a meticulousle maintained 60 meter long, 30 meter wide slope, featuring a comfortable 10 to 14 degree incline that is perfect for honing your technique. It delivers a highly concentrated, authentic mountain experience right in the heart of Yokohama.</p>
+                </div>
+            </div>
+        </section>
+
+   
+    </main>
+
+<footer>
+        <p>2026© Kitso Khango</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileClose = document.getElementById('mobileClose');
+    
+        hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+        mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+
+    
+    </script>
+
+
+</body>
+</html>    

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNOVA | Feedback</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   
+    <nav>
+       <button class="hamburger" id="hamburger" aria-label="Menu">
+         <span></span>
+         <span></span>
+       </button>
+       <a class="nav-logo" href="index.html">SNOVA</a>
+       <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="facilities.html">Facilities</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="bookings.html">Bookings</a></li>
+         <li><a href="feedback.html" class="active">Feedback</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">X</button>
+        <a href="index.html">Home</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <header class="page-header">
+        <span class="page-title">Feedback</span>
+    </header>
+
+    <div class="booking-hero">
+        <img src="feedbackimage.png" alt="Share your feedback">
+    </div>
+
+    <main class="booking-body">
+
+        <div class="booking-form-wrap">
+           <form id="feedbackForm" onsubmit="handleSubmit(event)">
+            
+        <div class="form-group"> 
+            <label>Full Name <span class="req"></span></label>
+            <input type="text" name="full_name" required >
+        </div>
+
+        <div class="form-group">
+            <label>Email Address<span class="req"></span></label>
+            <input type="email" name="email" required >
+        </div>
+
+        <div class="form-group">
+            <label>Your Experience <span class="req"></span></label>
+            <select required>
+                <option value="" disabled selected></option>
+                <option value="excellent" >Excellent</option>
+                <option value="good" >Good</option>
+                <option value="average" >Average</option>
+                <option value="poor" >Poor</option>
+            </select>
+        </div>
+      
+        <div class="form-group">
+            <label>Tell us more <span class="req"></span></label>
+            <textarea required placeholder="" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="btn-book">SUBMIT</button>
+
+        <div class="success-msg" id="successMsg">
+            Thank you for your feedback, we appreciate it!
+        </div>
+    
+    </form>
+ </div>
+
+ <div class="booking-tagline">
+    <h2>Your voice<br>shapes<br>our park</h2>
+ </div>   
+ 
+    </main>
+
+<footer>
+        <p>2026© Kitso Khango</p>
+    </footer>
+
+<script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileClose = document.getElementById('mobileClose');
+    
+        hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+        mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('feedbackForm');
+            const msg = document.getElementById('successMsg');
+            msg.style.display = 'block';
+            form.reset();
+            setTimeout(() => {msg.style.display = 'none';}, 4000);
+            
+        }
+    
+    </script>
+
+</body>
+</html>    

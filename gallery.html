@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNOVA | Gallery</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   
+    <nav>
+       <button class="hamburger" id="hamburger" aria-label="Menu">
+         <span></span>
+         <span></span>
+       </button>
+       <a class="nav-logo" href="index.html">SNOVA</a>
+       <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="facilities.html">Facilities</a></li>
+         <li><a href="gallery.html" class="active">Gallery</a></li>
+         <li><a href="bookings.html">Bookings</a></li>
+         <li><a href="feedback.html">Feedback</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">X</button>
+        <a href="index.html">Home</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <header class="page-header">
+        <span class="page-title">Gallery</span>
+    </header>
+
+
+    <main class="gallery-grid">
+        <img src="galleryimage1.png">
+        <img src="galleryimage2.png">
+        <img src="galleryimage3.png">
+        <img src="galleryimage4.png">
+        <img src="galleryimage5.png">
+        <img src="galleryimage6.png">
+    </main>
+
+
+<footer>
+        <p>2026© Kitso Khango</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileClose = document.getElementById('mobileClose');
+    
+        hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+        mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+
+    
+    </script>
+
+
+</body>
+</html>       
